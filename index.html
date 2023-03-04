@@ -2,8 +2,7 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
@@ -14,7 +13,9 @@
         }
 
         .title,.bottom {
+            width: 750rem;
             position: fixed;
+            font-size: 12px;
         }
 
         .title {
@@ -25,7 +26,7 @@
         }
 
         .book-box {
-            height: 100vh;
+            height: 94vh;
             padding: 4vh 0 2vh;
             overflow: hidden;
 
@@ -48,7 +49,7 @@
         .left-box,
         .right-box {
             width: 375rem;
-            height: 100vh;
+            height: 100%;
             position: absolute;
             z-index: 999;
             top: 0;
@@ -59,9 +60,8 @@
         }
 
         .bottom {
-            bottom: 0;
+            bottom: 20rem;
 
-            width: 750rem;
             height: 2vh;
             display: flex;
             justify-content: space-between;
@@ -79,11 +79,9 @@
         <div class="book-box">
             <p class="text"></p>
         </div>
-        <!--点击判断层-->
-        <div class="left-box"></div>
-        <div class="right-box"></div>
 
-    <div class="bottom">
+        <!--底部-->
+        <div class="bottom">
         <!--书名-->
         <div class="book-name"></div>
 
@@ -96,6 +94,10 @@
         </div>
 
     </div>
+
+        <!--点击判断层-->
+        <div class="left-box"></div>
+        <div class="right-box"></div>
 
 <script>
     // 设置rem适配
