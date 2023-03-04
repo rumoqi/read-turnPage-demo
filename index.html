@@ -26,7 +26,7 @@
         }
 
         .book-box {
-            height: 92vh;
+            height: calc(100vh - 75px);
             padding: 4vh 0 2vh;
             overflow: hidden;
 
@@ -103,6 +103,8 @@
     // 设置rem适配
     document.documentElement.style.fontSize = 100 / 750 +'vw'
 
+    let userAgent = navigator.userAgent
+    console.log(userAgent)
     // 书籍内容
 
 
